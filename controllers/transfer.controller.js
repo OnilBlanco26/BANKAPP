@@ -9,6 +9,8 @@ exports.createTransfer = catchAsync(async (req, res, next) => {
     amount,
     senderUserId,
     receiverUserId: userReceiver.id,
+    receiverUserName: userReceiver.name,
+    receiverUserAccount: userReceiver.accountNumber,
   });
 
   res.status(200).json({

@@ -9,7 +9,7 @@ const globalErrorHandler = require('../controllers/error.controller');
 class Server {
   constructor() {
     this.app = express();
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 4000;
 
     //Path Routes
     this.paths = {
@@ -60,7 +60,7 @@ class Server {
 
   listen() {
     this.app.listen(this.port, () => {
-      console.log('Server Running On Por', this.port);
+      console.log('Server Running On Port', this.port);
     });
   }
 }

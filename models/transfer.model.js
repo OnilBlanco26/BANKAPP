@@ -22,6 +22,14 @@ const Transfer = db.define('transfers', {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  receiverUserName: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  receiverUserAccount: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
 });
 
 module.exports = Transfer;

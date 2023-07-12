@@ -57,7 +57,7 @@ exports.loginUser = catchAsync(async (req, res, next) => {
 
   return res.json({
     status: 'success',
-    message: 'Welcome to the academlo bank',
+    message: 'Welcome to the PixelHub Bank',
     token,
     user: {
       uid: user.id,
